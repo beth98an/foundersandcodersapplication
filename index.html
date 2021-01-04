@@ -7,12 +7,6 @@
             font-family: ariel;
             background-color: #fed1f2;
         }
-        #box {
-            display: flex;
-            height: 25%;
-            justify-content: center;
-            
-        }
         .tablink {
             background-color: #D1FEDD;
             color: black;
@@ -27,29 +21,29 @@
             background-color: #fed1f2;
         }
         .tabcontent {
-            color: white;
+            color: black;
             display: none;
             padding: 100px 20px;
             height: 100%;
         }
-        .black-text {
-            color: black
-        }
+        #About Me {background-color: red;}
+        #Why I am applying {background-color: blue;}
+        #Links {background-color: green;}
     </style>
     <head>
-    <h1 class ="black-text"> Bethan Evans</h1>
+        <h1> Bethan Evans</h1>
     </head>
     <body>
         <div id = "box">
-            <button class = "tablink" onclick = "openpage('About Me')" id = "defaultOpen">Home</button>
-            <button class = "tablink" onclick = "openpage('Why I am applying')">Why I am applying.</button>
-            <button class = "tablink" onclick = "openpage('Links')">Links</button>
+            <button class = "tablink" onclick = "openpage('About Me', this, 'red')" id = "defaultOpen">Home</button>
+            <button class = "tablink" onclick = "openpage('Why I am applying', this, 'blue')">Why I am applying.</button>
+            <button class = "tablink" onclick = "openpage('Links', this, 'green')">Links</button>
         
             <div id = "Home" class = "tabcontent">
                 <h3>About Me.</h3>
-                <p class = "black-text">Hello, my name is Bethan and I am a mathematics graduate from the University of Hertfordshire.</p>
-                <p class ="black-text">In my spare time I enjoy:</p>
-                <ul class = "black-text">
+                <p>Hello, my name is Bethan and I am a mathematics graduate from the University of Hertfordshire.</p>
+                <p>In my spare time I enjoy:</p>
+                <ul>
                     <li>playing video games,</li>
                     <li>playing the piano,</li>
                     <li>spending time with friends and family,</li>
@@ -62,12 +56,12 @@
             </div>
             <div id = "Links" class = "tabcontent">
                 <h3>My coding profiles.</h3>
-                <p class="black-text"> Link to my <a href = "https://www.freecodecamp.org/fcc1174d8b6-3431-444e-b832-f77c9a9b016a"> freecodecamp</a> profile.</p>
-                <p class = "black-text"> Link to my <a href = "https://www.codewars.com/users/beth98an">codewars</a> account.</p>
+                <p> Link to my <a href = "https://www.freecodecamp.org/fcc1174d8b6-3431-444e-b832-f77c9a9b016a"> freecodecamp</a> profile.</p>
+                <p> Link to my <a href = "https://www.codewars.com/users/beth98an">codewars</a> account.</p>
             </div>
         </div>
         <script>
-        function openPage(pageName, element, colour) {
+        function openPage(pageName, elmnt, color) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -78,12 +72,9 @@
                 tablinks[i].style.backgroundColor = " ";
             }
             document.getElementById(pageName).style.display ="block";
-            element.style.backgroundColor = colour;
+            elmnt.style.backgroundColor = color;
         }
         document.getElementById("defaultOpen").click()
-        </script>
-        
-        
-        
+        </script>   
     </body>
 </html>
