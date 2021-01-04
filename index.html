@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
     <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: ariel;
+            background-color: #fed1f2
+        }
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+        .tablink:hover {
+            background-color: #777;
+        }
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
         body {
             background-color: #fed1f2
         }
@@ -9,6 +36,24 @@
         }
     </style>
     <body>
+        <button class = "tablink" onclick = "openpage('About Me')">Home</button>
+        <button class = "tablink" onclick = "openpage('Why I am applying')">Home</button>
+        <button class = "tablink" onclick = "openpage('Links')">Home</button>
+        
+        <div id = "Home" class = "tabcontent">
+            <h3>About Me.</h3>
+            <p></p>
+        </div>
+        <div id = "Why I am applying" class = "tabcontent">
+            <h3>Why I am applying.</h3>
+            <p></p>
+        </div>
+        <div id = "Links" class = "tabcontent">
+            <h3>My coding profiles.</h3>
+            <p></p>
+        </div>
+        
+        
         <h2 class ="black-text"> Bethan Evans</h2>
         <p class = "black-text">Hello, my name is Bethan and I am a mathematics graduate from the University of Hertfordshire.</p>
         <p class ="black-text">In my spare time I enjoy:</p>
