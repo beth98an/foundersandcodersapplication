@@ -1,0 +1,44 @@
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: ariel;
+    background-color: #fed1f2;
+    height: 100%;
+}
+
+.tabs {
+    background-color: #D1FEDD;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 1px solid #f2fed1;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    width: 25%;
+}
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+.tab.active {
+    background-color: #D1FEDD;
+}
+.tab:hover {
+    background-color: #fed1f2;
+}
+.tab-content {
+    color: black;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
