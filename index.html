@@ -7,10 +7,14 @@
             font-family: ariel;
             background-color: #fed1f2;
         }
+        #box {
+          display: flex;  
+        }
         .tablink {
             background-color: #D1FEDD;
-            color: white;
-            float: left;
+            display: flex;
+            align-items: center;
+            color: black;
             border: none;
             outline: none;
             cursor: pointer;
@@ -35,29 +39,31 @@
     <h1 class ="black-text"> Bethan Evans</h1>
     </head>
     <body>
-        <button class = "tablink" onclick = "openpage('About Me')">Home</button>
-        <button class = "tablink" onclick = "openpage('Why I am applying')">Why I am applying.</button>
-        <button class = "tablink" onclick = "openpage('Links')">Links</button>
+        <div id = "box">
+            <button class = "tablink" onclick = "openpage('About Me')" id = "defaultOpen">Home</button>
+            <button class = "tablink" onclick = "openpage('Why I am applying')">Why I am applying.</button>
+            <button class = "tablink" onclick = "openpage('Links')">Links</button>
         
-        <div id = "Home" class = "tabcontent">
-            <h3>About Me.</h3>
-            <p class = "black-text">Hello, my name is Bethan and I am a mathematics graduate from the University of Hertfordshire.</p>
-            <p class ="black-text">In my spare time I enjoy:</p>
-            <ul class = "black-text">
-                <li>playing video games,</li>
-                <li>playing the piano,</li>
-                <li>spending time with friends and family,</li>
-                <li>building and programming Lego robots</li>
-            </ul>
-        </div>
-        <div id = "Why I am applying" class = "tabcontent">
-            <h3>Why I am applying.</h3>
-            <p></p>
-        </div>
-        <div id = "Links" class = "tabcontent">
-            <h3>My coding profiles.</h3>
-            <p class="black-text"> Link to my <a href = "https://www.freecodecamp.org/fcc1174d8b6-3431-444e-b832-f77c9a9b016a"> freecodecamp</a> profile.</p>
-            <p class = "black-text"> Link to my <a href = "https://www.codewars.com/users/beth98an">codewars</a> account.</p>
+            <div id = "Home" class = "tabcontent">
+                <h3>About Me.</h3>
+                <p class = "black-text">Hello, my name is Bethan and I am a mathematics graduate from the University of Hertfordshire.</p>
+                <p class ="black-text">In my spare time I enjoy:</p>
+                <ul class = "black-text">
+                    <li>playing video games,</li>
+                    <li>playing the piano,</li>
+                    <li>spending time with friends and family,</li>
+                    <li>building and programming Lego robots</li>
+                </ul>
+            </div>
+            <div id = "Why I am applying" class = "tabcontent">
+                <h3>Why I am applying.</h3>
+                <p></p>
+            </div>
+            <div id = "Links" class = "tabcontent">
+                <h3>My coding profiles.</h3>
+                <p class="black-text"> Link to my <a href = "https://www.freecodecamp.org/fcc1174d8b6-3431-444e-b832-f77c9a9b016a"> freecodecamp</a> profile.</p>
+                <p class = "black-text"> Link to my <a href = "https://www.codewars.com/users/beth98an">codewars</a> account.</p>
+            </div>
         </div>
         <script>
         function openPage(pageName, element, colour) {
