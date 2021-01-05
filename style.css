@@ -4,7 +4,7 @@
 .active[data-tab-content] {
     display: block;
 }
-body, html{
+body, html {
     padding: 0;
     margin: 0;
     color: black;
@@ -33,7 +33,11 @@ body, html{
 }
 .tab-content {
     color: black;
+    font-family: cursive;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display:flex;
+    flex-direction: row;
+    width: 400px;
 }
