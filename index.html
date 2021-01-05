@@ -7,12 +7,14 @@
     <script src="script.js" defer></script>
     <link href ="style.css" rel= "stylesheet">
     <title>Document</title>
-    <h1>Bethan Evans : Application</h1>
+    <!--<h1 id = "header">Bethan Evans : Application</h1>-->
 </head>
 <body>
-    <button data-tab-target="#home">About Me</button>
-    <button data-tab-target="#why">Why I am applying</button>
-    <button data-tab-target="#link">Links</button>
+    <ul class ="tabs">
+        <li data-tab-target="#home" class = "active tab">About Me</li>
+        <li data-tab-target="#why" class = "tab">Why I am applying</li>
+        <li data-tab-target="#link" class = "tab">Links</li>
+    </ul>
 
     <div class="tab-content">
         <div id="home" data-tab-content class ="active">
