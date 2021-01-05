@@ -33,7 +33,7 @@ body, html {
 }
 .tab-content {
     color: black;
-    font-family: monospace;
+    font-family: arial;
     height: 100%;
     margin-left: 100px;
     margin-right: 100px;
