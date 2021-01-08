@@ -17,7 +17,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom: 2px solid #d607f8;
+    border-bottom: 5px solid #d607f8;
     color: black;
     font-size: 17px;
 }
@@ -35,9 +35,23 @@ body, html {
     color: black;
     font-family: arial;
     height: 100%;
+    display:flex;
     margin-left: 100px;
     margin-right: 100px;
-    display:flex;
-    flex-direction: row;
-    width: 400px;
+}
+.text{
+    width: 500px;
+  }
+  .textforvideo {
+    width: 500px;
+  }
+  .videobox {
+    margin-left: 650px;
+    margin-top: -200px;
+    width: 500px;
+  }
+.image {
+    width: 300px;
+    margin-left: 600px;
+    margin-top: -100px;
 }
