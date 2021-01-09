@@ -63,7 +63,7 @@ video {
     width: 200px;
     margin-left: 100px;
 }
-@media (max-width: 500px){
+@media (max-width: 800px){
     .videobox {width:250px; margin-left: 0px; margin-top: 0px}
     .textforvideo {width: 250px;}
     .text {width: 250px;}
