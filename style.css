@@ -63,3 +63,11 @@ video {
     width: 200px;
     margin-left: 100px;
 }
+@media (max-width: 500px){
+    .videobox {width:250px; margin-left: 0px; margin-top: 0px}
+    .textforvideo {width: 250px;}
+    .text {width: 250px;}
+    .image1 {width: 150px;}
+    .image2 {width: 150px;margin-left:0px; margin-top:0px;}
+    video {width: 250px}
+}
