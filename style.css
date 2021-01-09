@@ -36,6 +36,7 @@ body, html {
     font-family: arial;
     height: 100%;
     display: flex;
+    flex-direction: row;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -47,7 +48,7 @@ body, html {
 }
 .videobox {
     margin-left: 600px;
-    margin-top: -200px;
+    margin-top: -400px;
     width: 500px;
 }
 .image2 {
